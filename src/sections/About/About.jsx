@@ -11,9 +11,8 @@ const AboutSection = styled.section`
     width: 100%;
     height: auto;
     min-height: 80vh;
-    box-shadow:0 10px 10px  ${({theme}) => theme.shadowSections},
-    0 -10px 10px  ${({theme}) => theme.shadowSections}
-    ;
+    box-shadow:0 10px 10px  ${({ theme }) => theme.shadowSections},
+    0 -10px 10px  ${({ theme }) => theme.shadowSections};
     background-image: linear-gradient(135deg,#00b4db,#0083b0);
     display: flex;
     flex-direction: column;
@@ -22,8 +21,6 @@ const AboutSection = styled.section`
     gap: 3rem;
     position: relative;
     z-index: 0;
- 
- 
     @media (max-width:768px) {
         text-align: center;
     }

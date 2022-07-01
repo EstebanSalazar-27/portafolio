@@ -12,6 +12,7 @@ import { Hero } from './sections/Hero/Hero';
 import { About } from './sections/About/About';
 import { Projects } from './sections/Projects/Projects';
 import { Helmet } from "react-helmet"
+import { MetaDatos } from './SEO/MetaDatos';
 
 
 const WrapperSection = styled.section`
@@ -28,28 +29,21 @@ function App() {
   }
   return (
     <div className="App">
-      <Helmet>
-        <meta charset="utf-8" />
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="Web site created by using create-react-app and this is my professional portfolio" />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <meta http-equiv='cache-control' content='no-cache' />
-        <meta http-equiv='expires' content='0' />
-        <meta http-equiv='pragma' content='no-cache' />
-        <title>Esteban Salazar Portfolio</title>
-
-
-      </Helmet>
+      
+      {/* SEO HELMET */}
+      <MetaDatos />
+      {/* Themes */}
       <ThemeProvider theme={isDarkModeActived === true ? darkMode : lightMode}>
+        {/* Globals Styles */}
         <GlobalStyles />
+        {/* Handle Themes Button */}
         <SwitchBtn setIsDarkModeActived={setIsDarkModeActived} handleMode={handleMode} />
+
+        {/* Sections */}
         <WrapperSection>
           <Hero />
         </WrapperSection>
+
         <About />
 
         <WrapperSection>

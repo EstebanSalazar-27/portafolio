@@ -6,11 +6,7 @@ import { Header } from '../Header/Header'
 import "./projectCard.scss"
 
 
-const InfoProject = styled.p`
-    color: ${({ theme }) => theme.text};
-    font-family: "Poppins";
-    font-weight: 400;
-`
+
 const ImageCont = styled.div`
     box-shadow: 0px 10px 20px ${({ theme }) => theme.shadowSections};
 `
@@ -19,18 +15,23 @@ const CiteTechnologies = styled.cite`
     font-weight: 400;
     font-family: "Poppins";
 `
-
-const HeaderSecundary = styled.h4`
-    color: ${({ theme }) => theme.secundaryHeaders};
-`
 const BtnCont = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
 `
+const InfoProject = styled.p`
+    color: ${({ theme }) => theme.text};
+    font-family: "Poppins";
+    font-weight: 400;
+`
+const HeaderSecundary = styled.h4`
+    color: ${({ theme }) => theme.secundaryHeaders};
+`
+
 const SourceCodeLink = styled.a`
-        background-image: linear-gradient(135deg,#00b4db,#0083b0);
+    background-image: linear-gradient(135deg,#00b4db,#0083b0);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;

@@ -36,7 +36,8 @@ export const MyHero = styled.h1`
 export const Hero = () => {
     return (
         <MyHeader >
-            <div data-aos="fade-right"
+            <div
+                data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="1000"
@@ -46,7 +47,6 @@ export const Hero = () => {
 
             <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="1200">
                 <Button
-                    data-aos="fade-right"
                     size="lg"
                     colorLetters="linear-gradient(135deg,#ffffff,#ffffff)"
                     hoverBg={`linear-gradient(135deg,#00b4db,#0083b0)`}
