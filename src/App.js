@@ -35,9 +35,11 @@ function App() {
         <meta name="theme-color" content="#000000" />
         <meta name="description" content="Web site created by using create-react-app and this is my professional portfolio" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <meta http-equiv='cache-control' content='no-cache' />
+        <meta http-equiv='expires' content='0' />
+        <meta http-equiv='pragma' content='no-cache' />
         <title>Esteban Salazar Portfolio</title>
 
 
