@@ -41,7 +41,8 @@ export const Hero = () => {
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="1000"
-                data-aos-delay="300">
+                data-aos-delay="300"
+            >
                 <MyHero>Hola, soy <span className='text-main'>Esteban Salazar</span>, <br /> Frontend Developer.<br /> Bienvenido a mi Website</MyHero>
             </div>
 
