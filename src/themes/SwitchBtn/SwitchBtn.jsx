@@ -12,6 +12,10 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     height: 34,
     padding: 7,
     maxWidth: "200px",
+    position: "fixed",
+    zIndex: "200",
+    top: "5px",
+    left: "5px",
     '& .MuiSwitch-switchBase': {
         margin: 1,
         padding: 0,
