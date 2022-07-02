@@ -4,14 +4,12 @@
     gap: 5rem;
     padding-bottom: 2rem;
 }
-
 .project-inf {
     flex-basis: 40%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-
 .project__img-cont {
     flex-basis: 55%;
     height: max-content;
@@ -31,25 +29,19 @@
             transition: 200ms ease-in;
 
         }
-
         &:hover {
             &::before {
                 opacity: 1;
             }
         }
     }
-
-
-
     img {
         width: 100%;
         object-fit: cover;
         background-position: center;
         z-index: 1;
-
     }
 }
-
 @media (max-width:768px) {
     .cont-flex {
         flex-wrap: wrap;

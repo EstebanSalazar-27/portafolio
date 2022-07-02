@@ -1,5 +1,4 @@
 import React from 'react'
-import Preview from "../images/preview.png"
 import { Helmet } from "react-helmet"
 
 export const MetaDatos = () => {
