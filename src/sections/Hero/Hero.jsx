@@ -1,6 +1,8 @@
 import React from 'react'
+
 import styled from 'styled-components'
 import { Button } from '../../components/Button/Button'
+
 
 
 const MyHeader = styled.header`
@@ -34,6 +36,8 @@ export const MyHero = styled.h1`
     }
 `
 export const Hero = () => {
+
+
     return (
         <MyHeader >
             <div
@@ -42,21 +46,25 @@ export const Hero = () => {
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="1000"
                 data-aos-delay="300"
+                data-aos-once="true"
             >
-                <MyHero>Hola, soy <span className='text-main'>Esteban Salazar</span>, <br /> Frontend Developer.<br /> Bienvenido a mi Website</MyHero>
+                <MyHero>  Hola, soy <span className='text-main'>Esteban Salazar</span>, <br /> Frontend Developer.<br /> Bienvenido a mi Website</MyHero>
             </div>
 
-            <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="1200">
+
+            <div data-aos="fade-right" data-aos-once="true" data-aos-duration="800" data-aos-delay="1200">
                 <Button
                     size="lg"
                     colorLetters="linear-gradient(135deg,#ffffff,#ffffff)"
-                    hoverBg={`linear-gradient(135deg,#00b4db,#0083b0)`}
+                    hoverBg="linear-gradient(135deg,#00b4db,#0083b0)"
                     bgColorBefore="linear-gradient(135deg,#00b4db,#0083b0)"
-                    bgColor={"linear-gradient(135deg,#00b4db,#0083b0)"}
+                    bgColor="linear-gradient(135deg,#00b4db,#0083b0)"
                 >
-                    Show more
+                    show more
                 </Button>
+
             </div>
         </MyHeader>
     )
 }
+

@@ -37,9 +37,10 @@ export const Projects = () => {
         data-aos-easing="ease-in-sine"
         data-aos-duration="800"
         data-aos-delay="100"
+        data-aos-once="true"
         className='cont-header'
       >
-        <Header>Projects</Header>
+        <Header>Proyectos</Header>
       </div>
 
       <ProjectCards>

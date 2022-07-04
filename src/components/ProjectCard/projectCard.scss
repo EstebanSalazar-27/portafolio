@@ -14,11 +14,9 @@
     flex-basis: 55%;
     height: max-content;
     position: relative;
-
     a {
         position: relative;
         z-index: 2;
-
         &::before {
             content: '';
             position: absolute;

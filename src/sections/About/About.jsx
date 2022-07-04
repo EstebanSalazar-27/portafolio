@@ -5,12 +5,14 @@ import { Button } from '../../components/Button/Button'
 import { Header } from '../../components/Header/Header'
 
 
-const AboutSection = styled.section`
+export const DecoratedSection = styled.section`
     margin-bottom: 3rem;
+    clip-path:${({ clipPath }) => clipPath};
     padding: 2rem .5rem;
     width: 100%;
+    min-width: 200px;
     height: auto;
-    min-height: 80vh;
+    min-height: ${({ minHeight }) => minHeight || "88vh"};
     box-shadow:0 10px 10px  ${({ theme }) => theme.shadowSections},
     0 -10px 10px  ${({ theme }) => theme.shadowSections};
     background-image: linear-gradient(135deg,#00b4db,#0083b0);
@@ -18,7 +20,7 @@ const AboutSection = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap:3rem;
     position: relative;
     z-index: 0;
     @media (max-width:768px) {
@@ -61,12 +63,13 @@ const Cont = styled.div`
 `
 export const About = () => {
     return (
-        <AboutSection id='about'>
+        <DecoratedSection id='about'>
             <div data-aos="fade-in"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="800"
-                data-aos-delay="100">
-                <Header color="#fff">About Me</Header>
+                data-aos-delay="100"
+                data-aos-once="true">
+                <Header color="#fff">Sobre mi</Header>
             </div>
 
             <AboutArticle>
@@ -74,7 +77,8 @@ export const About = () => {
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="600"
-                    data-aos-delay="200">
+                    data-aos-delay="200"
+                    data-aos-once="true">
                     <Cont><img src={Photo} alt="" /></Cont>
                 </div>
 
@@ -83,7 +87,9 @@ export const About = () => {
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="800"
-                    data-aos-delay="100">
+                    data-aos-delay="100"
+                    data-aos-once="true"
+                >
                     <Cont >
                         <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }} >
                             <CommonText>
@@ -100,6 +106,6 @@ export const About = () => {
 
 
             </AboutArticle>
-        </AboutSection>
+        </DecoratedSection>
     )
 }

@@ -26,7 +26,7 @@ const InfoProject = styled.p`
     font-family: "Poppins";
     font-weight: 400;
 `
-const HeaderSecundary = styled.h4`
+export const HeaderSecundary = styled.h4`
     color: ${({ theme }) => theme.secundaryHeaders};
 `
 
@@ -48,7 +48,8 @@ export const ProjectCard = ({ name, url, technologies, description, image, sourc
                 data-aos="fade-right"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="800"
-                data-aos-delay="100">
+                data-aos-delay="100"
+                data-aos-once="true">
                 <Header size="md">{name}</Header>
                 <div>
                     <InfoProject>
@@ -56,7 +57,7 @@ export const ProjectCard = ({ name, url, technologies, description, image, sourc
                     </InfoProject>
                 </div>
                 <div>
-                    <HeaderSecundary>Technologies Applied:</HeaderSecundary>
+                    <HeaderSecundary>Tecnologias Aplicadas:</HeaderSecundary>
                     <CiteTechnologies >
                         {technologies}
                     </CiteTechnologies>
@@ -69,17 +70,21 @@ export const ProjectCard = ({ name, url, technologies, description, image, sourc
 
             </div>
 
-            <ImageCont className='project__img-cont' data-aos="fade-left"
+            <div data-aos="fade-left"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="600"
-                data-aos-delay="800">
-                <a
-                    target="_blank"
-                    href={url}
-                >
-                    <img src={image} alt="" height={350} width={"100%"} />
-                </a>
-            </ImageCont>
+                data-aos-delay="800"
+                data-aos-once="true">
+                <ImageCont className='project__img-cont' >
+                    <a
+                        target="_blank"
+                        href={url}
+                    >
+                        <img src={image} alt="" height={350} width={"100%"} />
+                    </a>
+                </ImageCont>
+            </div>
+
 
 
 

@@ -6,6 +6,21 @@
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+    text-transform: capitalize;
+}
+
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 button {
     border: none;
     cursor: pointer;
@@ -15,8 +30,7 @@ button {
 img {
     display: block;
     object-fit: cover;
-    border-radius: 2px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.236);
+
 }
 
 ul {
@@ -26,9 +40,17 @@ ul {
 a {
     text-decoration: none;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
 }
-p{
-   font-family: 'Poppins', sans-serif;;
+
+p {
+    font-family: 'Poppins', sans-serif;
+    ;
 }
