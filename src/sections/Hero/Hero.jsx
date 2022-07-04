@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import { Button } from '../../components/Button/Button'
 
 
-
 const MyHeader = styled.header`
     width: 100%;
     height: 99.5vh;
