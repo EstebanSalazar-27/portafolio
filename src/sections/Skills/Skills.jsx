@@ -45,7 +45,28 @@ export const Skills = () => {
                     Skills
                 </Header>
             </div>
-
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                </div>
+            </div>
             <SkillsCardsCont>
                 {skills.map(({ name, logo, adds }) => {
                     return (

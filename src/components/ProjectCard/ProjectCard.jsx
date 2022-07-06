@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Button } from '../Button/Button'
 import { Header } from '../Header/Header'
 import "./projectCard.scss"
+import { withNamespaces } from 'react-i18next'
 
 
 
@@ -25,6 +26,7 @@ const InfoProject = styled.p`
     color: ${({ theme }) => theme.text};
     font-family: "Poppins";
     font-weight: 400;
+    
 `
 export const HeaderSecundary = styled.h4`
     color: ${({ theme }) => theme.secundaryHeaders};
@@ -41,7 +43,7 @@ const SourceCodeLink = styled.a`
         margin-left: .3rem;
     }
 `
-export const ProjectCard = ({ name, url, technologies, description, image, sourceUrl }) => {
+export const ProjectCard = ({ name, url, technologies, description, image, sourceUrl, t }) => {
     return (
         <div className='cont-flex'>
             <div className='project-inf'
@@ -53,11 +55,11 @@ export const ProjectCard = ({ name, url, technologies, description, image, sourc
                 <Header size="md">{name}</Header>
                 <div>
                     <InfoProject>
-                        {description}
+                        {t(`projects.${description}`)}
                     </InfoProject>
                 </div>
                 <div>
-                    <HeaderSecundary>Tecnologias Aplicadas:</HeaderSecundary>
+                    <HeaderSecundary>{t("projects.technologies_applied")}</HeaderSecundary>
                     <CiteTechnologies >
                         {technologies}
                     </CiteTechnologies>
@@ -65,7 +67,7 @@ export const ProjectCard = ({ name, url, technologies, description, image, sourc
 
                 <BtnCont>
                     <Button colorLetters="linear-gradient(135deg,#ffffff,#ffffff)" url={url}>Website</Button>
-                    <SourceCodeLink target="_blank" href={sourceUrl}>Source Code</SourceCodeLink>
+                    <SourceCodeLink target="_blank" href={sourceUrl}>{t("projects.source_code")}</SourceCodeLink>
                 </BtnCont>
 
             </div>
@@ -91,3 +93,5 @@ export const ProjectCard = ({ name, url, technologies, description, image, sourc
         </div >
     )
 }
+
+export const ProjectCardWrapped = withNamespaces()(ProjectCard)

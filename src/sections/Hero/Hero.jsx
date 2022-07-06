@@ -1,8 +1,11 @@
 import React from 'react'
-
+import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 import styled from 'styled-components'
-import { Button } from '../../components/Button/Button'
+import i18next from 'i18next';
 
+//  Styled Components 
+
+import { Button } from '../../components/Button/Button'
 
 const MyHeader = styled.header`
     width: 100%;
@@ -14,15 +17,13 @@ const MyHeader = styled.header`
     min-width: 200px;
     @media (max-width:768px) {
        align-items: center;
-       
-    }
-  
-    
+    }  
 `
 export const MyHero = styled.h1`
     color: ${({ theme }) => theme.primaryHeaders};
     font-size: 3.5rem;
     font-weight: 700;
+    white-space: pre-wrap;
     .text-main{
     background-image: linear-gradient(135deg,#00b4db,#0083b0);
     -webkit-text-fill-color: transparent;
@@ -34,9 +35,12 @@ export const MyHero = styled.h1`
         text-align: center;
     }
 `
-export const Hero = () => {
 
+const Hero = (props) => {
+    const { t } = props
+   
 
+    
     return (
         <MyHeader >
             <div
@@ -46,8 +50,10 @@ export const Hero = () => {
                 data-aos-duration="1000"
                 data-aos-delay="300"
                 data-aos-once="true"
+                style={{width:"100%", maxWidth: "860px"}}
             >
-                <MyHero>  Hola, soy <span className='text-main'>Esteban Salazar</span>, <br /> Frontend Developer.<br /> Bienvenido a mi Website</MyHero>
+                <MyHero>{t("log.hero", { name: "Esteban Salazar" })}</MyHero>
+                {/* <MyHero>  Hola, soy <span className='text-main'>Esteban Salazar</span>, <br /> Frontend Developer.<br /> Bienvenido a mi Website</MyHero> */}
             </div>
 
 
@@ -59,7 +65,7 @@ export const Hero = () => {
                     bgColorBefore="linear-gradient(135deg,#00b4db,#0083b0)"
                     bgColor="linear-gradient(135deg,#00b4db,#0083b0)"
                 >
-                    show more
+                    {t("log.show_more")}
                 </Button>
 
             </div>
@@ -67,3 +73,4 @@ export const Hero = () => {
     )
 }
 
+export const HeroWrapped = withNamespaces()(Hero)

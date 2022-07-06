@@ -1,0 +1,19 @@
+{
+    "log": {
+        "hero": "hola soy {{name}} , frontend developer. bienvenido a mi website",
+        "show_more": "saber mas "
+    },
+    "about": {
+        "header": "Sobre mi",
+        "about_me": "Naci y creci en Ciudad Guayana, Venezuela el 03 de enero del 2000, y actualmente resido en la ciudad de Buenos aires, Argentina. Soy un Desarrollador Frontend. Mis principales pilares para el desarrollo son JavaScript, ReactJs, CSS, SASS, Styled Components     Soy apasionado a lo que hago y me considero una persona organizada, autodidacta, disciplinada y colaboradora que le gusta trabajar en equipo. Siempre busco aprender de mis compañeros, así como generar retroalimentación que pueda ayudar al crecimiento del equipo y crear un ambiente de trabajo agradable.      Mi objetivo es crecer en una empresa donde pueda fortalecer mis habilidades y adquirir otras nuevas."
+    },
+    "projects": {
+        "header": "proyectos",
+        "technologies_applied": "tecnologias aplicadas",
+        "pokedex_description": "En este proyecto he creado una pokedex consumiendo la PokeApi para obtener la base de datos de mas de 1000 pokemones. La pokedex cuenta con un sistema de paginado y por cada pagina traera cierta cantidad de pokemones,  he implementado el uso de un estado global para agregar una funcionalidad en donde el usuario puede seleccionar sus pokemones favoritos, tambien cuenta con un sistema de filtrado  reactivo en donde puedes buscar el pokemon que haga match con la keyword de la busqueda",
+        "giphy_description": "Este proyecto fue creado tomando como inspiracion la plataforma giphy, cuya funcionalidad es el entretenimiento, podemos hacer busquedas de gifs y saber un poco mas sobre los detalles de cada gif haciendo click sobre ellos. Y tambien cuenta con un sistema de rutas ",
+        "calculator_description": "En este proyecto desarrolle una calculadora funcional, en donde podemos hacer diferentes tipos de operaciones, y cuenta con dos disenos Dark y Light.",
+        "google_description": "Este formulario fue creado basado en un formulario de google, en donde he implementado validaciones con la libreria yun y toda la estructuracion del formulario y manejo de datos la he manejado mediante el uso de Formik una libreria basada en react ",
+        "source_code": "Codigo Fuente"
+    }
+}

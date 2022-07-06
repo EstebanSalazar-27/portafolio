@@ -1,9 +1,11 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
+import { withNamespaces } from 'react-i18next'
 import styled from 'styled-components'
 import { Header } from '../../components/Header/Header'
-import { ProjectCard } from '../../components/ProjectCard/ProjectCard'
-import getProjectsData from './projectsData'
+import { ProjectCard, ProjectCardWrapped } from '../../components/ProjectCard/ProjectCard'
+import { useProjectData } from '../../hooks/useProjectData'
+
 
 
 
@@ -26,9 +28,13 @@ const ProjectCards = styled.div`
   gap: 2rem;
 `
 
-export const Projects = () => {
+export const Projects = (props) => {
 
-  const projectsData = getProjectsData()
+  const [projectData] = [useProjectData()]
+  console.log(projectData)
+
+
+
 
   return (
     <MySectionProjects>
@@ -40,12 +46,14 @@ export const Projects = () => {
         data-aos-once="true"
         className='cont-header'
       >
-        <Header>Proyectos</Header>
+        <Header></Header>
       </div>
 
       <ProjectCards>
-        {projectsData.map(({ name, description, technologies, url, image, sourceUrl }) => <ProjectCard key={name} sourceUrl={sourceUrl} name={name} image={image} description={description} technologies={technologies} url={url} />)}
+        {projectData.map(({ name, description, technologies, url, image, sourceUrl }) => <ProjectCardWrapped key={name} sourceUrl={sourceUrl} name={name} image={image} description={description} technologies={technologies} url={url} />)}
       </ProjectCards>
     </MySectionProjects>
   )
 }
+
+export const ProjectsWrapped = withNamespaces()(Projects)

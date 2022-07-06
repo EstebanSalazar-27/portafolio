@@ -27,7 +27,6 @@ export const SkillsCard = ({ name, logo, adds }) => {
             data-aos-ondurationchange="500"
             data-aos-delay="100"
             data-aos-once="true">
-
             {
                 adds !== ""
                     ?
