@@ -1,6 +1,6 @@
 
 
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
 const dimensionBtn = {
     sm: {
@@ -10,7 +10,7 @@ const dimensionBtn = {
     },
     md: {
         height: "40px",
-        width: "100px",
+        width: "120px",
         fontSize: "1rem"
     },
     lg: {
@@ -37,7 +37,9 @@ const Mybutton = styled.button`
     border-image-slice: 1;
     cursor: pointer;
     position: relative;
-  
+    a{
+        padding: .8rem;
+    }
     ::before{
         content: "";
         margin: 0;
@@ -60,10 +62,10 @@ const Mybutton = styled.button`
     }
 
 `
-export const Button = ({ children, bgColor, colorLetters, bgColorBefore, borderColor, url, size = "md" }) => {
+export const Button = ({ children, bgColor, colorLetters, bgColorBefore, borderColor, url, size = "md", target }) => {
     return (
         <Mybutton colorLetters={colorLetters} borderColor={borderColor} bgColor={bgColor} bgColorBefore={bgColorBefore} size={size}>
-            <a target="_blank" href={url}>
+            <a target={target} href={url}>
                 {children}
             </a>
         </Mybutton>

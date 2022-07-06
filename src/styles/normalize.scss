@@ -15,7 +15,9 @@ h6,
 button {
     text-transform: capitalize;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     overflow-y: auto;
     overflow-x: hidden;

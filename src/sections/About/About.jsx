@@ -41,6 +41,7 @@ const AboutArticle = styled.article`
     gap:5rem;
     width: 80%;
     max-width: 1000px;
+ 
     @media (max-width:768px) {
         flex-wrap: wrap;
     }
@@ -51,16 +52,19 @@ const Cont = styled.div`
     display: flex;
     justify-content: center;
     overflow: hidden;
-   
-    img{
-       width: 100%;
-       min-width: 360px;
-        
-    }
+  
     @media (max-width:768px) {
         flex-basis: 80%;
     }
     
+`
+const ContImage = styled.picture`
+      img{
+       width: 100%;
+       min-width: 360px;
+       box-shadow: 5px 5px 8px #26282a34;
+        
+    }
 `
 const About = (props) => {
     const { t } = props
@@ -81,7 +85,7 @@ const About = (props) => {
                     data-aos-duration="600"
                     data-aos-delay="200"
                     data-aos-once="true">
-                    <Cont><img src={Photo} alt="" /></Cont>
+                    <ContImage><img src={Photo} alt="" /></ContImage>
                 </div>
 
 
@@ -98,7 +102,7 @@ const About = (props) => {
                                 {t("about.about_me")}
                             </CommonText>
                             <div>
-                                <Button bgColorBefore="linear-gradient(135deg,#ffffff,#ffffff)" bgColor="linear-gradient(135deg,#ffffff,#ffffff)" borderColor="linear-gradient(135deg,#ffffff,#ffffff)" size="md" url={`https://drive.google.com/file/d/1GwCtuCAWMAwU0TvrFIGalI7L4uufHfhi/view?usp=sharing`}>Curriculum</Button>
+                                <Button target="_blank" bgColorBefore="linear-gradient(135deg,#ffffff,#ffffff)" bgColor="linear-gradient(135deg,#ffffff,#ffffff)" borderColor="linear-gradient(135deg,#ffffff,#ffffff)" size="md" url={`https://drive.google.com/file/d/1GwCtuCAWMAwU0TvrFIGalI7L4uufHfhi/view?usp=sharing`}>Curriculum</Button>
                             </div>
                         </div>
                     </Cont>

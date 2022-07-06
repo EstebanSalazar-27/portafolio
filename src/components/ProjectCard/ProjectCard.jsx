@@ -66,7 +66,7 @@ export const ProjectCard = ({ name, url, technologies, description, image, sourc
                 </div>
 
                 <BtnCont>
-                    <Button colorLetters="linear-gradient(135deg,#ffffff,#ffffff)" url={url}>Website</Button>
+                    <Button target="_blank" colorLetters="linear-gradient(135deg,#ffffff,#ffffff)" url={url}>Website</Button>
                     <SourceCodeLink target="_blank" href={sourceUrl}>{t("projects.source_code")}</SourceCodeLink>
                 </BtnCont>
 

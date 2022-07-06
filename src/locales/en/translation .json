@@ -14,6 +14,6 @@
         "giphy_description": "This project was created taking inspiration from the giphy platform, whose functionality is entertainment, we can search for gifs and learn a little more about the details of each gif by clicking on them. And it also has a route system",
         "calculator_description": "In this project i've development a functional calculator,  where we can perform different types of calculations and it has two modes Dark and Light",
         "google_description": "This form was created based on a google form, where I have implemented validations with the yun library and all the structuring of the form and data management have been handled by using Formik, a react-based library",
-        "source_code" : "Source Code"
+        "source_code": "Source Code"
     }
 }

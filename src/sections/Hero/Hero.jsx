@@ -38,9 +38,9 @@ export const MyHero = styled.h1`
 
 const Hero = (props) => {
     const { t } = props
-   
 
-    
+
+
     return (
         <MyHeader >
             <div
@@ -50,7 +50,7 @@ const Hero = (props) => {
                 data-aos-duration="1000"
                 data-aos-delay="300"
                 data-aos-once="true"
-                style={{width:"100%", maxWidth: "860px"}}
+                style={{ width: "100%", maxWidth: "860px" }}
             >
                 <MyHero>{t("log.hero", { name: "Esteban Salazar" })}</MyHero>
                 {/* <MyHero>  Hola, soy <span className='text-main'>Esteban Salazar</span>, <br /> Frontend Developer.<br /> Bienvenido a mi Website</MyHero> */}
@@ -59,6 +59,7 @@ const Hero = (props) => {
 
             <div data-aos="fade-right" data-aos-once="true" data-aos-duration="800" data-aos-delay="1200">
                 <Button
+                    url="#about"
                     size="lg"
                     colorLetters="linear-gradient(135deg,#ffffff,#ffffff)"
                     hoverBg="linear-gradient(135deg,#00b4db,#0083b0)"
