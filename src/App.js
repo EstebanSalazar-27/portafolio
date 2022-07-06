@@ -59,11 +59,7 @@ function App(props) {
     }, 1200);
   }, [])
 
-  if (loading) {
-    return (
-      <Loading />
-    )
-  }
+
 
 
   return (
@@ -78,26 +74,38 @@ function App(props) {
         {/* Globals Styles */}
         <GlobalStyles />
         {/* Handle Themes Button */}
-        <MyNavbar>
-          <FieldLanguageWrapped is />
-          <SwitchBtn isDarkModeActived={isDarkModeActived} setIsDarkModeActived={setIsDarkModeActived} handleMode={handleMode} />
 
-        </MyNavbar>
+        {
+          loading
+            ?
+            <Loading />
+            :
+            <div>
+              <MyNavbar>
+                <FieldLanguageWrapped is />
+                <SwitchBtn isDarkModeActived={isDarkModeActived} setIsDarkModeActived={setIsDarkModeActived} handleMode={handleMode} />
+
+              </MyNavbar>
 
 
-        {/* Sections */}
-        <WrapperSection>
-          <HeroWrapped />
-        </WrapperSection>
+              {/* Sections */}
+              <WrapperSection>
+                <HeroWrapped />
+              </WrapperSection>
 
-        <AboutWrapped />
+              <AboutWrapped />
 
-        <WrapperSection>
-          <ProjectsWrapped />
-        </WrapperSection>
+              <WrapperSection>
+                <ProjectsWrapped />
+              </WrapperSection>
 
-        <Skills />
-        <Footer />
+              <Skills />
+
+              <Footer />
+            </div>
+
+        }
+
       </ThemeProvider>
     </div>
 
