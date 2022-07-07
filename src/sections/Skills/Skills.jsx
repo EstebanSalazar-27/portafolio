@@ -1,81 +1,168 @@
 import React from 'react'
 import styled from 'styled-components'
-import { DecoratedSection } from '../About/About'
-import { SkillsCard } from '../../components/SkillsCard/SkillsCard'
-import getSkills from './skillsData'
+import "./skills.scss"
+
+import { withNamespaces } from 'react-i18next';
 import { Header } from '../../components/Header/Header'
 
+import reactLogo from "../../images/skills/react.png"
+import jsLogo from "../../images/skills/js.png"
+import gitLogo from "../../images/skills/git-logo.png"
+import githubLogo from "../../images/skills/githubLogo.png"
 
-const SkillsCardsCont = styled.section`
-    padding: 1rem 1rem;
-    width: 80%;
-    min-width: 200px;
-    min-height: 350px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-`
 export const SkillsHeader = styled.h3`
     color: ${({ theme }) => theme.constrastHeaders};
     font-weight: 400;
     font-size: 1.3rem;
     
 `
-const SkillsList = styled.ul`
+const MySkillsCont = styled.div`
+    padding: 1.5rem 1rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: .3rem;
+    gap: 2rem;
 `
-export const Skills = () => {
-    const skills = getSkills()
+const MyLineDecorated = styled.hr`
+  border: 1px solid #2d96ff;
+  width: 100%;
+  margin-top: .3rem;
+`
+export const Skills = (props) => {
+    const { t } = props
 
     return (
-        <DecoratedSection minHeight="120vh" clipPath="polygon(0% 8.5%, 100% 0%, 100% 100%, 0% 100%)">
+        <MySkillsCont>
             <div data-aos="fade-in"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="800"
                 data-aos-delay="100"
                 data-aos-once="true"
             >
-                <Header color={"#fff"}>
-                    Skills
+                <Header >
+                    {t("skills.header")}
                 </Header>
+                <MyLineDecorated />
             </div>
-            <div class="slider">
-                <div class="slide-track">
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
-                    <div class="slide"></div>
+
+            <div className='cont-skills'>
+
+                <div className="achievement-box" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="800"
+                    data-aos-delay="100"
+                    data-aos-once="true">
+                    <div className="achievement-box-icon">
+                        <img src={reactLogo} alt="" />
+                    </div>
+                    <div className="achievement-box-namebar-area">
+                        <span>ReactJs</span>
+                        <div className="achievement-box-bar">
+                            <div className="achievement-box-status-25">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+
+                <div className="achievement-box" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="800"
+                    data-aos-delay="100"
+                    data-aos-once="true">
+                    <div className="achievement-box-icon">
+                        <img src={jsLogo} alt="" />
+                    </div>
+                    <div className="achievement-box-namebar-area">
+                        <span>JavaScript</span>
+                        <div className="achievement-box-bar">
+                            <div className="achievement-box-status-50">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="achievement-box" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="800"
+                    data-aos-delay="100"
+                    data-aos-once="true">
+                    <div className="achievement-box-icon">
+                        <span className='css-logo'>CSS</span>
+                    </div>
+                    <div className="achievement-box-namebar-area">
+                        <span>CSS</span>
+                        <div className="achievement-box-bar">
+                            <div className="achievement-box-status-75">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="achievement-box" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="800"
+                    data-aos-delay="100"
+                    data-aos-once="true">
+                    <div className="achievement-box-icon">
+                        <span className='sass-logo'>SASS</span>
+                    </div>
+                    <div className="achievement-box-namebar-area">
+                        <span>SASS</span>
+                        <div className="achievement-box-bar">
+                            <div className="achievement-box-status-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="achievement-box" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="800"
+                    data-aos-delay="100"
+                    data-aos-once="true">
+                    <div className="achievement-box-icon">
+                        <img src={gitLogo} alt="gitLogo" />
+                    </div>
+                    <div className="achievement-box-namebar-area">
+                        <span>Git</span>
+                        <div className="achievement-box-bar">
+                            <div className="achievement-box-status-50 git-status">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="achievement-box " data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="800"
+                    data-aos-delay="100"
+                    data-aos-once="true">
+
+                    <div className="achievement-box-icon">
+                        <img src={githubLogo} alt="githubLogo" />
+                    </div>
+
+                    <div className="achievement-box-namebar-area">
+                        <span>Github</span>
+                        <div className="achievement-box-bar">
+                            <div className="achievement-box-status-50 github-status">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-            <SkillsCardsCont>
-                {skills.map(({ name, logo, adds }) => {
-                    return (
-                        <SkillsCard key={name} name={name} logo={logo} adds={adds} />
-                    )
-                })}
-            </SkillsCardsCont>
 
-
-        </DecoratedSection>
+        </MySkillsCont>
     )
 }
+
+const SkillsWrapped = withNamespaces()(Skills)
+
+export default SkillsWrapped
+

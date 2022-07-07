@@ -13,7 +13,7 @@ import { HeroWrapped } from './sections/Hero/Hero';
 import AboutWrapped from './sections/About/About';
 import { ProjectsWrapped } from './sections/Projects/Projects';
 import { MetaDatos } from './SEO/MetaDatos';
-import { Skills } from './sections/Skills/Skills';
+import SkillsWrapped, { Skills } from './sections/Skills/Skills';
 import { withNamespaces } from 'react-i18next';
 import { FieldLanguageWrapped } from './components/FieldLanguage/FieldLanguage';
 import { Footer } from './sections/Footer/Footer';
@@ -59,11 +59,7 @@ function App(props) {
     }, 1200);
   }, [])
 
-  if (loading) {
-    return (
-      <Loading />
-    )
-  }
+
 
 
   return (
@@ -78,27 +74,37 @@ function App(props) {
         {/* Globals Styles */}
         <GlobalStyles />
         {/* Handle Themes Button */}
-        <MyNavbar>
-          <FieldLanguageWrapped is />
-          <SwitchBtn isDarkModeActived={isDarkModeActived} setIsDarkModeActived={setIsDarkModeActived} handleMode={handleMode} />
+        {loading
+          ?
+          <Loading />
+          :
+          <div>
+            <MyNavbar>
+              <FieldLanguageWrapped is />
+              <SwitchBtn isDarkModeActived={isDarkModeActived} setIsDarkModeActived={setIsDarkModeActived} handleMode={handleMode} />
 
-        </MyNavbar>
+            </MyNavbar>
 
 
-        {/* Sections */}
-        <WrapperSection>
-          <HeroWrapped />
-        </WrapperSection>
+            {/* Sections */}
+            <WrapperSection>
+              <HeroWrapped />
+            </WrapperSection>
 
-        <AboutWrapped />
+            <AboutWrapped />
 
-        <WrapperSection>
-          <ProjectsWrapped />
-        </WrapperSection>
+            <WrapperSection>
+              <ProjectsWrapped />
+            </WrapperSection>
 
-        <Skills />
-        <Footer />
+            <SkillsWrapped />
+            <Footer />
+          </div>
+        }
       </ThemeProvider>
+
+
+
     </div>
 
   );

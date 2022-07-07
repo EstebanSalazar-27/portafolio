@@ -82,7 +82,7 @@ export const ProjectCard = ({ name, url, technologies, description, image, sourc
                         target="_blank"
                         href={url}
                     >
-                        <img src={image} alt="" height={350} width={"100%"} />
+                        <img src={image} alt="" height={350} width={"200"} />
                     </a>
                 </ImageCont>
             </div>

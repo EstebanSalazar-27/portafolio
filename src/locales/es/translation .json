@@ -15,5 +15,8 @@
         "calculator_description": "En este proyecto desarrolle una calculadora funcional, en donde podemos hacer diferentes tipos de operaciones, y cuenta con dos disenos Dark y Light.",
         "google_description": "Este formulario fue creado basado en un formulario de google, en donde he implementado validaciones con la libreria yun y toda la estructuracion del formulario y manejo de datos la he manejado mediante el uso de Formik una libreria basada en react ",
         "source_code": "Codigo Fuente"
+    },
+    "skills": {
+        "header": "tecnologias"
     }
 }

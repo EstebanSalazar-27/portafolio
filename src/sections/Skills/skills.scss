@@ -1,91 +1,192 @@
-.slider {
-    background: white;
-    height: 250px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: 1140px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-.slider::before, .slider::after {
-    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100px;
-    z-index: 2;
-}
-
-.slider::after {
-    right: 0;
-    top: 0;
-    -webkit-transform: rotateZ(180deg);
-    transform: rotateZ(180deg);
-}
-
-.slider::before {
-    left: 0;
-    top: 0;
-}
-
-.slider .slide-track {
-    animation: scroll 80s linear infinite;
+.cont-skills {
+    width: 100%;
     display: flex;
-    width: calc(250px * 18);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    flex-wrap: wrap;
 
 }
 
-.slider .slide-track:hover {
-    animation-play-state: paused;
+.achievement-box {
+    flex-basis: 25%;
+    height: 120px;
+    background-color: rgb(35, 48, 64);
+    box-shadow: 3px 2px 5px rgba(42, 40, 40, 0.103);
+    border: 2px solid rgb(64, 81, 102);
+    display: flex;
+
 }
 
-.slider .slide {
-    height: 250px;
-    width: 250px;
+.achievement-box-icon {
+    position: relative;
+    top: 3px;
+    left: 3px;
+    background-image: url("https://img.glom.fi/gdokjb44dw.png");
+    border: 5px solid rgba(52, 85, 125, 0.928);
+    height: 110px;
+    width: 110px;
+    min-width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    img {
+        height: 52px;
+        transition: all 300ms ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
 
 
-.slide:nth-child(1), .slide:nth-child(10) {
-    background-color: yellow;
+
+.achievement-box-namebar-area {
+    color: white;
+    display: inline-flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    margin: 20px;
+    height: 80px;
+
 }
 
-.slide:nth-child(2), .slide:nth-child(11) {
-    background-color: coral;
+.achievement-box-bar {
+    background-color: rgb(37, 42, 45);
+    border: 1px solid rgb(37, 42, 45);
+    height: 14px;
+    width: 200px;
+    position: relative;
 }
 
-.slide:nth-child(3), .slide:nth-child(12) {
-    background-color: blue;
+.css-logo,
+.sass-logo {
+    font-weight: 600;
+    font-size: 2.2rem;
+    transition: all 300ms ease;
+
+    &:hover {
+        transform: scale(1.050);
+    }
+
 }
 
-.slide:nth-child(4), .slide:nth-child(13) {
-    background-color: red;
+.css-logo {
+    color: rgb(66, 202, 255);
+
 }
 
-.slide:nth-child(5), .slide:nth-child(14) {
+.sass-logo {
+    color: rgb(237, 154, 228);
+}
+
+.achievement-box-status-25 {
+    position: absolute;
+    background-color: rgb(0, 174, 255);
+    margin: 2px;
+    margin-left: 3px;
+    height: 9px;
+    width: 65%;
+    animation: skill-25 6s infinite;
+
+}
+
+
+.achievement-box-status-50 {
+    position: absolute;
+    background-color: rgb(255, 255, 0);
+    margin: 2px;
+    height: 9px;
+    width: 70%;
+    animation: skill-50 6s infinite;
+}
+
+.git-status {
     background-color: orange;
 }
 
-.slide:nth-child(6), .slide:nth-child(15) {
-    background-color: purple;
+.github-status {
+    background-color: rgb(38, 81, 192);
 }
 
-.slide:nth-child(7), .slide:nth-child(16) {
-    background-color: pink;
+.achievement-box-status-75 {
+    position: absolute;
+    background-color: rgb(66, 202, 255);
+    margin: 2px;
+    height: 9px;
+    width: 70%;
+    animation: skill-75 6s infinite;
 }
 
-.slide:nth-child(8), .slide:nth-child(17) {
-    background-color: navy;
+.achievement-box-status-100 {
+    position: absolute;
+    background-color: rgb(237, 154, 228);
+    margin: 2px;
+    height: 9px;
+    width: 80%;
+    animation: skill-100 6s infinite;
 }
 
-.slide:nth-child(9), .slide:nth-child(18) {
-    background-color: lime;
-}
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
+@keyframes skill-25 {
+    from {
+        background-color: rgb(176, 225, 255);
+        width: 0%;
     }
-    100% {
-        transform: translateX(calc(-250px * 9));
+
+    to {
+
+        width: 65%;
+    }
+}
+
+@keyframes skill-50 {
+    from {
+        background-color: rgb(255, 252, 252);
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes skill-75 {
+    from {
+        background-color: rgb(255, 227, 227);
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes skill-100 {
+    from {
+        background-color: rgb(255, 233, 233);
+        width: 0%;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .achievement-box {
+        flex-basis: 100%;
+
+
     }
 }
