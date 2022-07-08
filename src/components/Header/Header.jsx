@@ -13,8 +13,8 @@ const dimensionHeader = {
 
 }
 const MyHeader = styled.h2`
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+
+ 
     font-size:${({ size }) => dimensionHeader[size].fontSize};
     color: ${({ theme, color }) => color || theme.primaryHeaders};
    

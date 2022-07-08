@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { withNamespaces } from 'react-i18next'
 import styled from 'styled-components'
 import { Header } from '../../components/Header/Header'
-import { ProjectCard, ProjectCardWrapped } from '../../components/ProjectCard/ProjectCard'
+import { ProjectCardWrapped } from '../../components/ProjectCard/ProjectCard'
 import { useProjectData } from '../../hooks/useProjectData'
 
 
@@ -16,7 +16,7 @@ const MySectionProjects = styled.section`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 5rem;
   .cont-header{
     text-align: center;
   }

@@ -7,7 +7,7 @@ import { Header } from '../../components/Header/Header'
 import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
 
 export const DecoratedSection = styled.section`
-   
+    margin-bottom: 4rem;
     clip-path:${({ clipPath }) => clipPath};
     padding: 2rem .5rem;
     width: 100%;
