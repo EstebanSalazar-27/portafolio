@@ -130,16 +130,7 @@
 
 
 /// Progress Animation 
-[data-aos="skill-progress-25"] {
-    width: 0%;
-    transition-duration: 3000ms;
 
-    &.aos-animate {
-        opacity: 1;
-        width: 50%;
-    }
-
-}
 
 [data-aos] {
 
@@ -164,6 +155,17 @@
     &[data-aos][data-aos-easing="new-easing"] {
         transition-timing-function: cubic-bezier(.250, .250, .750, .750);
     }
+}
+
+[data-aos="skill-progress-25"] {
+    width: 0%;
+    transition-duration: 3000ms;
+
+    &.aos-animate {
+        opacity: 1;
+        width: 50%;
+    }
+
 }
 
 [data-aos="skill-progress-50"] {
@@ -195,14 +197,15 @@
 
     &.aos-animate {
         opacity: 1;
-        width: 85%;
+        width: 90%;
     }
 
 }
 
-.git-status{
+.git-status {
     background-color: orange;
 }
+
 .github-status {
     background-color: rgb(38, 81, 192);
 }
@@ -221,7 +224,8 @@
     background: rgb(129, 247, 198);
     background: linear-gradient(90deg, rgba(129, 247, 198, 1) 0%, rgba(110, 255, 195, 1) 48%, rgba(67, 227, 142, 1) 97%);
 }
-.sass-status{
+
+.sass-status {
     background-color: rgb(190, 97, 141);
 }
 
