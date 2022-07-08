@@ -78,15 +78,17 @@
 
 }
 
-.css-logo {
-    color: rgb(66, 202, 255);
 
+
+
+
+.git-status {
+    background-color: orange;
 }
 
-.sass-logo {
-    color: rgb(237, 154, 228);
-}
 
+
+// Progress status
 .achievement-box-status-25 {
     position: absolute;
     background-color: rgb(0, 174, 255);
@@ -108,20 +110,12 @@
     animation: skill-50 6s infinite;
 }
 
-.git-status {
-    background-color: orange;
-}
-
-.github-status {
-    background-color: rgb(38, 81, 192);
-}
-
 .achievement-box-status-75 {
     position: absolute;
     background-color: rgb(66, 202, 255);
     margin: 2px;
     height: 9px;
-    width: 70%;
+    width: 75%;
     animation: skill-75 6s infinite;
 }
 
@@ -130,10 +124,12 @@
     background-color: rgb(237, 154, 228);
     margin: 2px;
     height: 9px;
-    width: 80%;
+    width: 85%;
     animation: skill-100 6s infinite;
 }
 
+
+/// Progress Animation 
 [data-aos="skill-progress-25"] {
     width: 0%;
     transition-duration: 3000ms;
@@ -187,7 +183,7 @@
 
     &.aos-animate {
         opacity: 1;
-        width: 70%;
+        width: 75%;
     }
 
 }
@@ -199,18 +195,39 @@
 
     &.aos-animate {
         opacity: 1;
-        width: 80%;
+        width: 85%;
     }
 
 }
 
+.git-status{
+    background-color: orange;
+}
+.github-status {
+    background-color: rgb(38, 81, 192);
+}
 
+.styled-status {
+    background: rgb(255, 183, 81);
+    background: linear-gradient(90deg, rgba(255, 183, 81, 1) 0%, rgba(255, 163, 239, 1) 61%, rgba(194, 91, 217, 1) 100%);
+}
 
+.material-status {
+    background: rgb(20, 44, 148);
+    background: linear-gradient(90deg, rgba(20, 44, 148, 1) 0%, rgba(67, 0, 255, 1) 48%, rgba(68, 56, 255, 1) 97%);
+}
 
+.i18next-status {
+    background: rgb(129, 247, 198);
+    background: linear-gradient(90deg, rgba(129, 247, 198, 1) 0%, rgba(110, 255, 195, 1) 48%, rgba(67, 227, 142, 1) 97%);
+}
+.sass-status{
+    background-color: rgb(190, 97, 141);
+}
+
+// Cards mobile
 @media (max-width: 768px) {
     .achievement-box {
-        flex-basis: 100%;
-
-
+        flex-basis: 80%;
     }
 }
