@@ -11,7 +11,6 @@ const MyRootLoading = styled.div`
 export const Loading = () => {
     return (
         <MyRootLoading className='root-loading'>
-
             <div className='loading-cont'>
                 <PulseLoader size={25} color="#0b98e0" />
             </div>

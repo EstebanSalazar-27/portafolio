@@ -35,8 +35,6 @@
     justify-content: center;
     align-items: center;
 
-
-
     img {
         height: 52px;
         transition: all 300ms ease;
@@ -96,7 +94,7 @@
     margin-left: 3px;
     height: 9px;
     width: 65%;
-    animation: skill-25 6s infinite;
+    animation: skill-25 6s 1;
 
 }
 
@@ -136,51 +134,77 @@
     animation: skill-100 6s infinite;
 }
 
+[data-aos="skill-progress-25"] {
+    width: 0%;
+    transition-duration: 3000ms;
 
-@keyframes skill-25 {
-    from {
-        background-color: rgb(176, 225, 255);
-        width: 0%;
+    &.aos-animate {
+        opacity: 1;
+        width: 50%;
     }
 
-    to {
+}
 
-        width: 65%;
+[data-aos] {
+
+    body[data-aos-duration='2000'] [data-aos],
+    [data-aos][data-aos][data-aos-duration='2000'] {
+        transition-duration: 2000ms;
     }
 }
 
-@keyframes skill-50 {
-    from {
-        background-color: rgb(255, 252, 252);
-        width: 0%;
+[data-aos] {
+
+    body[data-aos-delay='1000'] [data-aos],
+    [data-aos][data-aos][data-aos-delay='1000'] {
+        transition-duration: 1000ms;
+    }
+}
+
+
+[data-aos] {
+
+    body[data-aos-easing="new-easing"] &,
+    &[data-aos][data-aos-easing="new-easing"] {
+        transition-timing-function: cubic-bezier(.250, .250, .750, .750);
+    }
+}
+
+[data-aos="skill-progress-50"] {
+    width: 0%;
+    transition-duration: 3000ms;
+
+    &.aos-animate {
+        opacity: 1;
+        width: 60%;
     }
 
-    to {
+}
+
+[data-aos="skill-progress-75"] {
+    width: 0%;
+    transition-duration: 3000ms;
+
+    &.aos-animate {
+        opacity: 1;
         width: 70%;
     }
+
 }
 
-@keyframes skill-75 {
-    from {
-        background-color: rgb(255, 227, 227);
-        width: 0%;
-    }
+[data-aos="skill-progress-100"] {
+    background-color: rgb(176, 225, 255);
+    width: 0%;
+    transition-duration: 3000ms;
 
-    to {
-        width: 70%;
-    }
-}
-
-@keyframes skill-100 {
-    from {
-        background-color: rgb(255, 233, 233);
-        width: 0%;
-    }
-
-    to {
+    &.aos-animate {
+        opacity: 1;
         width: 80%;
     }
+
 }
+
+
 
 
 @media (max-width: 768px) {

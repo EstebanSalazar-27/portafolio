@@ -45,23 +45,24 @@ export const Skills = (props) => {
                 <Header >
                     {t("skills.header")}
                 </Header>
-                <MyLineDecorated />
+
             </div>
 
             <div className='cont-skills'>
 
-                <div className="achievement-box" data-aos="fade-up"
+                <div className="achievement-box" data-aos="fade-up "
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="800"
                     data-aos-delay="100"
-                    data-aos-once="true">
+                    data-aos-once="true"
+                >
                     <div className="achievement-box-icon">
                         <img src={reactLogo} alt="" />
                     </div>
                     <div className="achievement-box-namebar-area">
                         <span>ReactJs</span>
                         <div className="achievement-box-bar">
-                            <div className="achievement-box-status-25">
+                            <div className="achievement-box-status-25" data-aos="skill-progress-50" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000">
                             </div>
                         </div>
                     </div>
@@ -79,13 +80,13 @@ export const Skills = (props) => {
                     <div className="achievement-box-namebar-area">
                         <span>JavaScript</span>
                         <div className="achievement-box-bar">
-                            <div className="achievement-box-status-50">
+                            <div className="achievement-box-status-50" data-aos="skill-progress-50" data-aos-easing="new-easing" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="achievement-box" data-aos="fade-up"
+                <div className="achievement-box" data-aos="fade-up "
                     data-aos-easing="ease-in-sine"
                     data-aos-duration="800"
                     data-aos-delay="100"
@@ -96,7 +97,7 @@ export const Skills = (props) => {
                     <div className="achievement-box-namebar-area">
                         <span>CSS</span>
                         <div className="achievement-box-bar">
-                            <div className="achievement-box-status-75">
+                            <div className="achievement-box-status-75" data-aos="skill-progress-75" data-aos-easing="new-easing" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000">
                             </div>
                         </div>
                     </div>
@@ -113,7 +114,7 @@ export const Skills = (props) => {
                     <div className="achievement-box-namebar-area">
                         <span>SASS</span>
                         <div className="achievement-box-bar">
-                            <div className="achievement-box-status-100">
+                            <div className="achievement-box-status-100" data-aos="skill-progress-75" data-aos-easing="new-easing" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000">
                             </div>
                         </div>
                     </div>
@@ -130,7 +131,7 @@ export const Skills = (props) => {
                     <div className="achievement-box-namebar-area">
                         <span>Git</span>
                         <div className="achievement-box-bar">
-                            <div className="achievement-box-status-50 git-status">
+                            <div className="achievement-box-status-50 git-status" data-aos="skill-progress-25" data-aos-easing="new-easing" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000">
                             </div>
                         </div>
                     </div>
@@ -149,7 +150,7 @@ export const Skills = (props) => {
                     <div className="achievement-box-namebar-area">
                         <span>Github</span>
                         <div className="achievement-box-bar">
-                            <div className="achievement-box-status-50 github-status">
+                            <div className="achievement-box-status-50 github-status" data-aos="skill-progress-50" data-aos-easing="new-easing" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000">
                             </div>
                         </div>
 

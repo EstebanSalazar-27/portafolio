@@ -31,6 +31,7 @@ const ProjectCards = styled.div`
 export const Projects = (props) => {
 
   const [projectData] = [useProjectData()]
+  const { t } = props
   console.log(projectData)
 
 
@@ -46,7 +47,7 @@ export const Projects = (props) => {
         data-aos-once="true"
         className='cont-header'
       >
-        <Header></Header>
+        <Header>{t("projects.header")}</Header>
       </div>
 
       <ProjectCards>
