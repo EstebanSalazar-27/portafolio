@@ -172,7 +172,7 @@ export const Skills = (props) => {
                     <div className="achievement-box-namebar-area">
                         <span>SASS</span>
                         <div className="achievement-box-bar">
-                            <div className="achievement-box-status-50 sass-status" data-aos="skill-progress-25" data-aos-easing="new-easing" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000">
+                            <div className="achievement-box-status-100 sass-status" data-aos="skill-progress-100" data-aos-easing="new-easing" data-aos-duration="1000" data-aos-once="true" data-aos-delay="1000">
                             </div>
                         </div>
                     </div>
