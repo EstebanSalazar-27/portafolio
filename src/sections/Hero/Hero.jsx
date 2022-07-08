@@ -20,6 +20,7 @@ const MyHeader = styled.header`
     }  
 `
 export const MyHero = styled.h1`
+    
     color: ${({ theme }) => theme.primaryHeaders};
     font-size: 3.5rem;
     font-weight: 700;
@@ -30,11 +31,19 @@ export const MyHero = styled.h1`
     -webkit-background-clip: text;
     background-clip: text;
     }
+  
     @media (max-width:768px) {
         font-size: 2.2rem;
         text-align: center;
     }
 `
+const TextDecorated = styled.span`
+         
+    background-image: linear-gradient(135deg,#00b4db,#0083b0);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  
+    `
 
 const Hero = (props) => {
     const { t } = props
@@ -52,8 +61,9 @@ const Hero = (props) => {
                 data-aos-once="true"
                 style={{ width: "100%", maxWidth: "860px" }}
             >
-                <MyHero>{t("log.hero", { name: "Esteban Salazar" })}</MyHero>
-                {/* <MyHero>  Hola, soy <span className='text-main'>Esteban Salazar</span>, <br /> Frontend Developer.<br /> Bienvenido a mi Website</MyHero> */}
+
+
+                <MyHero>{t("log.hero1")} <TextDecorated className='name-decorated'>{t("log.name")}</TextDecorated> {t("log.hero2")}</MyHero>
             </div>
 
 

@@ -1,6 +1,8 @@
 {
     "log": {
-        "hero": "hi there i'm {{name}}, frontend developer and welcome to my website.",
+        "hero1": "hi there I'm",
+        "hero2": "frontend developer and welcome to my website.",
+        "name": "Esteban Salazar",
         "show_more": "show more"
     },
     "about": {
