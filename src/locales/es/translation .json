@@ -5,7 +5,8 @@
     },
     "about": {
         "header": "Sobre mi",
-        "about_me": "Naci y creci en Ciudad Guayana, Venezuela el 03 de enero del 2000, y actualmente resido en la ciudad de Buenos aires, Argentina. Soy un Desarrollador Frontend. Mis principales pilares para el desarrollo son JavaScript, ReactJs, CSS, SASS, Styled Components     Soy apasionado a lo que hago y me considero una persona organizada, autodidacta, disciplinada y colaboradora que le gusta trabajar en equipo. Siempre busco aprender de mis compañeros, así como generar retroalimentación que pueda ayudar al crecimiento del equipo y crear un ambiente de trabajo agradable.      Mi objetivo es crecer en una empresa donde pueda fortalecer mis habilidades y adquirir otras nuevas."
+        "about": "Soy un frontend developer de Venezuela  que actualmente reside en Buenos Aires Argentina",
+        "about_me": " Soy apasionado a lo que hago y me considero una persona organizada, autodidacta, disciplinada y colaboradora que le gusta trabajar en equipo. Siempre busco aprender de mis compañeros, así como generar retroalimentación que pueda ayudar al crecimiento del equipo y crear un ambiente de trabajo agradable. Mi objetivo es crecer en una empresa donde pueda fortalecer mis habilidades y adquirir otras nuevas."
     },
     "projects": {
         "header": "proyectos",

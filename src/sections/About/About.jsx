@@ -29,7 +29,10 @@ export const DecoratedSection = styled.section`
     }
 
 `
-
+const BtnCont = styled.div`
+    display: flex;
+    gap: .5rem;
+`
 export const CommonText = styled.p`
     color: ${({ theme }) => theme.contrastText};
     letter-spacing: .2px;
@@ -97,13 +100,20 @@ const About = (props) => {
                     data-aos-once="true"
                 >
                     <Cont >
+
                         <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }} >
+                            <CommonText>
+                                {t("about.about")}
+                            </CommonText>
+
                             <CommonText>
                                 {t("about.about_me")}
                             </CommonText>
-                            <div>
+
+                            <BtnCont>
                                 <Button target="_blank" bgColorBefore="linear-gradient(135deg,#ffffff,#ffffff)" bgColor="linear-gradient(135deg,#ffffff,#ffffff)" borderColor="linear-gradient(135deg,#ffffff,#ffffff)" size="md" url={`https://drive.google.com/file/d/1GwCtuCAWMAwU0TvrFIGalI7L4uufHfhi/view?usp=sharing`}>Curriculum</Button>
-                            </div>
+                                <Button target="_blank" bgColorBefore="linear-gradient(135deg,#ffffff,#ffffff)" bgColor="linear-gradient(135deg,#ffffff,#ffffff)" borderColor="linear-gradient(135deg,#ffffff,#ffffff)" size="md" url={`https://www.linkedin.com/in/esteban-salazar-8919231ab/`}>Linkedin</Button>
+                            </BtnCont>
                         </div>
                     </Cont>
                 </div>

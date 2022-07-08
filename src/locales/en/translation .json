@@ -5,7 +5,8 @@
     },
     "about": {
         "header": "about me",
-        "about_me": "I was burn and grew up in ciudad guayana, venezuela on  january 03, 2000 and i currently reside in buenos aires city, argentina. i'am frontend developer. my main pillars for development are: Javascript, ReactJs, CSS, SASS, Styled Components, Material UI , git, github. i am apassionate about what i do and i consider myselft an organized, self-taught, disciplined and collaborative person who likes to work in a team . i always seek to learn from my colleagues , as well as generate feedback that can help the team grow and create a pleasant work environment My goal is to grow in a company where I can strengthen my skills and acquire new ones."
+        "about": " I'm a frontend developer from Venezuela that currently  based in Buenos Aires, Argentina",
+        "about_me": " I am apassionate about what I do and I consider myselft an organized, self-taught, disciplined and collaborative person who likes to work in a team . I always want  to learn from my colleagues , as well as generate feedback that can help the team grow and create a pleasant work environment My goal is to grow in a company where I can strengthen my skills and acquire new ones."
     },
     "projects": {
         "header": "projects",
