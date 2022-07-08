@@ -85,9 +85,6 @@ function App(props) {
 
             </MyNavbar>
 
-              <WrapperSection>
-                <ProjectsWrapped />
-              </WrapperSection>
 
             {/* Sections */}
             <WrapperSection>
