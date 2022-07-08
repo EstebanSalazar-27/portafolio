@@ -5,8 +5,13 @@ import styled from 'styled-components';
 import "./loading.scss"
 
 const MyRootLoading = styled.div`
-    background-color: ${({ theme }) => theme.bodyBg};
-   
+    width: 100%;
+    height: 100vh;
+    background-color:${({ theme }) => theme.bodyBg};
+
+    h2{
+        color: ${({ theme }) => theme.primaryHeaders};
+    }
 `
 export const Loading = () => {
     return (
