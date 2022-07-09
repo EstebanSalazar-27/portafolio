@@ -48,10 +48,17 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a{
     font-family: 'Montserrat', sans-serif;
 }
+a,select,button{
 
+    &:focus{
+        border: none;
+        outline: 1.5px solid rgb(187, 229, 255);
+    }
+}
 p {
     font-family: 'Poppins', sans-serif;
     ;

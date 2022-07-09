@@ -9,20 +9,15 @@ const MyFieldSelect = styled.select`
     width: 120px;
     border-radius: 1px;
     border: none;
-    outline: none;
     background-color: transparent;
-   
     box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
     color: #168dc4;
-
     transition: all 300ms ease ;
     border:1.8px solid  #168dc4;
     font-family: "montserrat" ;
     font-weight: 400;
 
-    &:focus{
-        outline: none;
-    }
+  
    
   
 `
