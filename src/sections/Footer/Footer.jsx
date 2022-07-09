@@ -69,7 +69,7 @@ export const Footer = () => {
 
             </IconsCont>
             <hr />
-            <cite>© 2022 - Template developed by <a target="_blank" href="https://github.com/JacoboMartinezGomez">Jacobo Martínez</a></cite>
+            <cite>© 2022 - Template developed by <a target="_blank" href="https://github.com/EstebanSalazar-27">Esteban Salazar</a></cite>
         </MyFooter>
     )
 }
