@@ -109,7 +109,7 @@ export const Button = ({ type, children, bgColor, colorLetters, bgColorBefore, b
             {
                 url
                     ?
-                    <MyUncle href={url} colorLetters={colorLetters} borderColor={borderColor} bgColor={bgColor} bgColorBefore={bgColorBefore} size={size}>{children}</MyUncle>
+                    <MyUncle target="_blank" href={url} colorLetters={colorLetters} borderColor={borderColor} bgColor={bgColor} bgColorBefore={bgColorBefore} size={size}>{children}</MyUncle>
                     :
                     <Mybutton colorLetters={colorLetters} borderColor={borderColor} bgColor={bgColor} bgColorBefore={bgColorBefore} size={size}>
                         {children}
