@@ -78,14 +78,11 @@ function App(props) {
           ?
           <Loading />
           :
-          <div>
+          <>
             <MyNavbar>
               <FieldLanguageWrapped is />
               <SwitchBtn isDarkModeActived={isDarkModeActived} setIsDarkModeActived={setIsDarkModeActived} handleMode={handleMode} />
-
             </MyNavbar>
-
-
             {/* Sections */}
             <WrapperSection>
               <HeroWrapped />
@@ -99,7 +96,7 @@ function App(props) {
 
             <SkillsWrapped />
             <Footer />
-          </div>
+          </>
         }
       </ThemeProvider>
 
