@@ -31,6 +31,7 @@ export const DecoratedSection = styled.section`
 `
 const BtnCont = styled.div`
     display: flex;
+    justify-content: center;
     gap: .5rem;
 `
 export const CommonText = styled.p`

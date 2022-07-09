@@ -13,7 +13,7 @@ const MyHeader = styled.header`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
     min-width: 200px;
     @media (max-width:768px) {
        align-items: center;

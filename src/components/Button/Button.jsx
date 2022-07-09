@@ -22,7 +22,6 @@ const dimensionBtn = {
 
 const Mybutton = styled.button`
     padding: .2rem;
-
     width: ${({ size }) => dimensionBtn[size].width};
     height: ${({ size }) => dimensionBtn[size].height};
     font-size: ${({ size }) => dimensionBtn[size].fontSize};
@@ -39,6 +38,7 @@ const Mybutton = styled.button`
     cursor: pointer;
     position: relative;
     user-select: none;
+
     ::before{
         content: "";
         margin: 0;
