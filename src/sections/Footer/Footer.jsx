@@ -21,7 +21,6 @@ const MyFooter = styled.footer`
         
       
     }
- 
     hr{
         margin-top: 1rem;
         margin-bottom: .5rem;

@@ -14,9 +14,10 @@ const dimensionBtn = {
         fontSize: "1rem"
     },
     lg: {
-        height: "130px",
-        width: "150px",
+        height: "50px",
+        width: "170px",
         fontSize: "1.5rem"
+        
     }
 }
 
@@ -62,9 +63,11 @@ const Mybutton = styled.button`
 
 `
 const MyUncle = styled.a`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding:.2rem .5rem;
     text-align: center;
-    line-height:30px;
     text-transform: capitalize;
     width: ${({ size }) => dimensionBtn[size].width};
     height: ${({ size }) => dimensionBtn[size].height};
@@ -103,13 +106,13 @@ const MyUncle = styled.a`
         }
     }
 `
-export const Button = ({ type, children, bgColor, colorLetters, bgColorBefore, borderColor, url, size = "md" }) => {
+export const Button = ({ children, bgColor, colorLetters, bgColorBefore, borderColor, url, target, size = "md" }) => {
     return (
         <>
             {
                 url
                     ?
-                    <MyUncle target="_blank" href={url} colorLetters={colorLetters} borderColor={borderColor} bgColor={bgColor} bgColorBefore={bgColorBefore} size={size}>{children}</MyUncle>
+                    <MyUncle target={target} href={url} colorLetters={colorLetters} borderColor={borderColor} bgColor={bgColor} bgColorBefore={bgColorBefore} size={size}>{children}</MyUncle>
                     :
                     <Mybutton colorLetters={colorLetters} borderColor={borderColor} bgColor={bgColor} bgColorBefore={bgColorBefore} size={size}>
                         {children}

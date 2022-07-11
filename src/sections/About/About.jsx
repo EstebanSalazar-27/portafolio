@@ -112,8 +112,8 @@ const About = (props) => {
                             </CommonText>
 
                             <BtnCont>
-                                <Button bgColorBefore="linear-gradient(135deg,#ffffff,#ffffff)" bgColor="linear-gradient(135deg,#ffffff,#ffffff)" borderColor="linear-gradient(135deg,#ffffff,#ffffff)" size="md" url={`https://drive.google.com/file/d/1GwCtuCAWMAwU0TvrFIGalI7L4uufHfhi/view?usp=sharing`}>Curriculum</Button>
-                                <Button bgColorBefore="linear-gradient(135deg,#ffffff,#ffffff)" bgColor="linear-gradient(135deg,#ffffff,#ffffff)" borderColor="linear-gradient(135deg,#ffffff,#ffffff)" size="md" url={`https://www.linkedin.com/in/esteban-salazar-8919231ab/`}>Linkedin</Button>
+                                <Button target="_blank" bgColorBefore="linear-gradient(135deg,#ffffff,#ffffff)" bgColor="linear-gradient(135deg,#ffffff,#ffffff)" borderColor="linear-gradient(135deg,#ffffff,#ffffff)" size="md" url={`https://drive.google.com/file/d/1GwCtuCAWMAwU0TvrFIGalI7L4uufHfhi/view?usp=sharing`}>Curriculum</Button>
+                                <Button target="_blank" bgColorBefore="linear-gradient(135deg,#ffffff,#ffffff)" bgColor="linear-gradient(135deg,#ffffff,#ffffff)" borderColor="linear-gradient(135deg,#ffffff,#ffffff)" size="md" url={`https://www.linkedin.com/in/esteban-salazar-8919231ab/`}>Linkedin</Button>
                             </BtnCont>
                         </div>
                     </Cont>
