@@ -9,6 +9,7 @@ export const darkMode = {
     btnSwitch: "#fafaf9",
     btnCircle: "#1c1917",
     shadowSections: "#f5f5f410",
+    outline: "#f1f5f9",
 }
 
 export const lightMode = {
@@ -22,4 +23,5 @@ export const lightMode = {
     btnSwitch: "#1c1917",
     btnCircle: "#fff",
     shadowSections: "#29252420",
+    outline: "#1e293b",
 }

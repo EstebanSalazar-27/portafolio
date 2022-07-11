@@ -20,11 +20,9 @@ const MyHeader = styled.header`
     }  
 `
 export const MyHero = styled.h1`
-    
     color: ${({ theme }) => theme.primaryHeaders};
     font-size: 3.5rem;
     font-weight: 700;
-    white-space: pre-wrap;
     .text-main{
     background-image: linear-gradient(135deg,#00b4db,#0083b0);
     -webkit-text-fill-color: transparent;
@@ -42,6 +40,7 @@ const TextDecorated = styled.span`
     background-image: linear-gradient(135deg,#00b4db,#0083b0);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
   
     `
 

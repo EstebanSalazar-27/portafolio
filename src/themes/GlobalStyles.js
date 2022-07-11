@@ -8,6 +8,16 @@ body{
     transition: background 200ms ease;
   
 }
+a,
+select,
+button {
+
+    &:focus {
+        border: none;
+        outline: 2px solid ${({theme}) => theme.outline};
+       
+    }
+}
 p{
     color: ${({ theme }) => theme.text};
 }

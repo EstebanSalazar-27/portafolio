@@ -10,16 +10,12 @@ const MyFooter = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
      picture{
         cursor: pointer;
         transition: 300ms ease;
         &:hover{
-            transform: translateY(-5px);
-            
+            transform: translateY(-5px);   
         }
-        
-      
     }
     hr{
         margin-top: 1rem;
@@ -30,7 +26,6 @@ const MyFooter = styled.footer`
     cite{
         font-size: .8rem;
         color: #ccc;
-
         a{
             color: #ccc;
             transition: 300ms ease;
@@ -68,7 +63,7 @@ export const Footer = () => {
 
             </IconsCont>
             <hr />
-            <cite>© 2022 - Template developed by <a target="_blank" href="https://github.com/EstebanSalazar-27">Esteban Salazar</a></cite>
+            <cite>© 2022 - Template developed by <a target="_blank" style={{padding:"5px"}} href="https://github.com/EstebanSalazar-27">Esteban Salazar</a></cite>
         </MyFooter>
     )
 }

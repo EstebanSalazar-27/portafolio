@@ -37,6 +37,9 @@ const SourceCodeLink = styled.a`
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    display: flex;
+    align-items: center;
+    padding: .5rem .5rem;
     font-weight: 600;
     transition: 300ms ease-in-out;
     &:hover{
@@ -86,10 +89,6 @@ export const ProjectCard = ({ name, url, technologies, description, image, sourc
                     </a>
                 </ImageCont>
             </div>
-
-
-
-
         </div >
     )
 }

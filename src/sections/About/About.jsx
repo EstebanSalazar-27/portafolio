@@ -4,7 +4,7 @@ import i18next from 'i18next';
 import Photo from '../../images/esteban.jpeg'
 import { Button } from '../../components/Button/Button'
 import { Header } from '../../components/Header/Header'
-import { withNamespaces, NamespacesConsumer, Trans } from 'react-i18next';
+import { withNamespaces } from 'react-i18next';
 
 export const DecoratedSection = styled.section`
     margin-bottom: 4rem;
@@ -55,7 +55,7 @@ const Cont = styled.div`
     flex-basis: 50%;
     display: flex;
     justify-content: center;
-    overflow: hidden;
+
   
     @media (max-width:768px) {
         flex-basis: 80%;

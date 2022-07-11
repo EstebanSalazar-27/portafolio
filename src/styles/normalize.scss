@@ -10,7 +10,6 @@ div {
     display: block;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -59,16 +58,7 @@ a {
     font-family: 'Montserrat', sans-serif;
 }
 
-a,
-select,
-button {
 
-    &:focus {
-        border: none;
-        outline: 2px solid white;
-
-    }
-}
 
 p {
     font-family: 'Poppins', sans-serif;

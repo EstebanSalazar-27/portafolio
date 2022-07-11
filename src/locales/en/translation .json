@@ -1,14 +1,14 @@
 {
     "log": {
-        "hero1": "hi there I'm",
-        "hero2": "frontend developer and welcome to my website.",
+        "hero1": "Hi there I'm",
+        "hero2": "Frontend Developer and welcome to my website.",
         "name": "Esteban Salazar",
         "show_more": "know more"
     },
     "about": {
         "header": "about me",
         "about": " I'm a frontend developer from Venezuela that currently  based in Buenos Aires, Argentina.",
-        "about_me": " I am apassionate about what I do and I consider myselft an organized, self-taught, disciplined and collaborative person who likes to work in a team . I always want  to learn from my colleagues , as well as generate feedback that can help the team grow and create a pleasant work environment My goal is to grow in a company where I can strengthen my skills and acquire new ones."
+        "about_me": " I am apassionate about what I do and I consider myself an organized, self-taught, disciplined and collaborative person who likes to play in a team . I always want  to learn from my colleagues , as well as generate feedback that can help the team grow and create a pleasant work environment My goal is to grow in a company where I can strengthen my skills and acquire new ones."
     },
     "projects": {
         "header": "projects",
