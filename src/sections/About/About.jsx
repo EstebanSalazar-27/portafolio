@@ -31,8 +31,12 @@ export const DecoratedSection = styled.section`
 `
 const BtnCont = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: .5rem;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
 `
 export const CommonText = styled.p`
     color: ${({ theme }) => theme.contrastText};

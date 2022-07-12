@@ -63,7 +63,7 @@ export const Footer = () => {
 
             </IconsCont>
             <hr />
-            <cite>© 2022 - Template developed by <a target="_blank" style={{padding:"5px"}} href="https://github.com/EstebanSalazar-27">Esteban Salazar</a></cite>
+            <cite>© 2022 - Template developed by <a target="_blank" style={{ padding: "5px" }} href="https://github.com/EstebanSalazar-27">Esteban Salazar</a></cite>
         </MyFooter>
     )
 }

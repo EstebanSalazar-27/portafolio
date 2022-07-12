@@ -14,7 +14,7 @@ button {
 
     &:focus {
         border: none;
-        outline: 2px solid ${({theme}) => theme.outline};
+        outline: 2px solid ${({ theme }) => theme.outline};
        
     }
 }
