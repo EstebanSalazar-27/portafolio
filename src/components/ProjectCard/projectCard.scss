@@ -14,6 +14,7 @@
 .project__img-cont {
     flex-basis: 55%;
     max-width: 600px;
+
     height: max-content;
     position: relative;
     a {
@@ -37,7 +38,9 @@
     }
     img {
         width: 100%;
-        object-fit: cover;
+        height: 100%;
+     
+        object-fit: contain;
         background-position: center;
         z-index: 1;
     }

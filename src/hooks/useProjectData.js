@@ -8,7 +8,25 @@ import calculadora from "../images/calculator.png"
 import giphy from "../images/giphy.png"
 import form from "../images/form.png"
 import pokedex from "../images/pokedex.png"
+import anime from "../images/anitaku.png"
+import taskManager from "../images/taskManager.png"
 const projectsData = [
+    {
+        name: "AnimeDV",
+        description: "animedv_description",
+        technologies: "ReactJs || Rest Apis || React Router  || Tailwind || Tailwind Themes  ",
+        url: "https://estebansalazar-27.github.io/anime-plataform/",
+        sourceUrl: "https://github.com/EstebanSalazar-27/anime-plataform",
+        image: anime
+    },
+    {
+        name: "Task Manager",
+        description: "taskManager_description",
+        technologies: "ReactJs || React Reducers || React Router || React beautiful dnd || Tailwind || Tailwind Themes  ",
+        url: "https://estebansalazar-27.github.io/TaskManager/",
+        sourceUrl: "https://github.com/EstebanSalazar-27/TaskManager",
+        image: taskManager
+    },
     {
         name: "Pokedex",
         description: "pokedex_description",

@@ -13,6 +13,8 @@
     "projects": {
         "header": "projects",
         "technologies_applied": "technologies applied:",
+        "taskManager_description": "this is a task manager, it has been created for optimize user time and manage tasks that must be done, in order to keep tracking our taks and their current status . ",
+        "animedv_description": "This project offers to the user the opportunity  to find anime or manga of his/her preferences, it has a search system by keyword and a filter bar to be able to perform specific searchs, once the user finds what was looking for, the user will be able to get all the information about the anime selected  even its seasons and chapters ",
         "pokedex_description": "In this project I have created a pokedex consuming the PokeApi to obtain the database of more than 1000 pokemon. The pokedex has a pagination system and for each page will bring a certain amount of pokemon, I have also implemented the use of a global state to add a functionality where the user can select their favorite pokemon, also has a reactive filtering system where you can search for the pokemon that matches the keyword of the search.",
         "giphy_description": "This project was created taking inspiration from the giphy platform, whose functionality is entertainment, we can search for gifs and learn a little more about the details of each gif by clicking on them. And it also has a route system.",
         "calculator_description": "In this project i've development a functional calculator,  where we can perform different types of calculations and it has two modes Dark and Light.",
