@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/portafolio/static/css/main.a29e4bf7.css",
-    "main.js": "/portafolio/static/js/main.39d921fc.js",
+    "main.css": "/portafolio/static/css/main.9abcced8.css",
+    "main.js": "/portafolio/static/js/main.2df006ab.js",
     "static/js/787.ae0d8d37.chunk.js": "/portafolio/static/js/787.ae0d8d37.chunk.js",
     "static/media/giphy.png": "/portafolio/static/media/giphy.1f28bb73d042a8d87c38.png",
+    "static/media/anitaku.png": "/portafolio/static/media/anitaku.4e250612baa4dbe9ff10.png",
     "static/media/pokedex.png": "/portafolio/static/media/pokedex.e87ab73dbc3f86739e9c.png",
     "static/media/form.png": "/portafolio/static/media/form.2f1af79d792b341cb5ad.png",
     "static/media/calculator.png": "/portafolio/static/media/calculator.6a3ffc38b063650bc176.png",
+    "static/media/taskManager.png": "/portafolio/static/media/taskManager.f5ecc474ccc761ebaf3a.png",
     "static/media/esteban.jpeg": "/portafolio/static/media/esteban.d7c79f555315a035239b.jpeg",
     "static/media/styledComponents.png": "/portafolio/static/media/styledComponents.61b1069d3f60b51e426d.png",
     "index.html": "/portafolio/index.html",
-    "main.a29e4bf7.css.map": "/portafolio/static/css/main.a29e4bf7.css.map",
-    "main.39d921fc.js.map": "/portafolio/static/js/main.39d921fc.js.map",
+    "main.9abcced8.css.map": "/portafolio/static/css/main.9abcced8.css.map",
+    "main.2df006ab.js.map": "/portafolio/static/js/main.2df006ab.js.map",
     "787.ae0d8d37.chunk.js.map": "/portafolio/static/js/787.ae0d8d37.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a29e4bf7.css",
-    "static/js/main.39d921fc.js"
+    "static/css/main.9abcced8.css",
+    "static/js/main.2df006ab.js"
   ]
 }
